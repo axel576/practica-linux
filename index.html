@@ -1,2 +1,122 @@
-<h1>Prueba 5 - Version nueva funcionando al 100 </h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servidor Web Fedora</title>
 
+<style>
+body {
+	margin: 0;
+	font-family: 'Segoe UI', sans-serif;
+	background: #0f172a;
+	color: white;
+}
+
+header {
+	text-align: center;
+	padding: 60px 20px;
+	background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+header h1 {
+	margin: 0;
+	font-size: 3em;
+}
+
+header p {
+	margin-top: 10px;
+	font-size: 1.2em;
+}
+
+.container {
+	padding: 40px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+
+.card {
+	background: #1e293b;
+	padding: 25px;
+	border-radius: 15px;
+	transition: 0.3s;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+	transform: translateY(-10px);
+}
+
+.card h2 {
+	margin-top: 0;
+	color: #38bdf8;
+}
+
+button {
+	margin-top: 10px;
+	padding: 10px 15px;
+	border: none;
+	background: #3b82f6;
+	color: white;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #2563eb;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+	background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+	<h1> Servidor Web Fedora</h1>
+	<p>Apache + Git + Control de Usuario</p>
+</header>
+
+<section class="container">
+
+	<div class="card">
+		<h2> Infraestructura</h2>
+		<p>Servidor web configurado con Apache y Virtual Hosts en Fedora Linux.</p>
+	</div>
+
+	<div class="card">
+		<h2> Seguridad</h2>
+		<p>Gestion de permisos con usuarios admin, frontend y visitante.</p>
+	</div>
+
+	<div class="card">
+		<h2> DevOps</h2>
+		<p>Control de versiones implementando con Git y despliegue de cambios.</p>
+	</div>
+
+	<div class="card">
+		<h2> Acceso en Red</h2>
+		<p>Disponible desde otros dispositivos dentro de la misma red.</p>
+	</div>
+
+	<div class="card">
+		<h2> Desarrollador</h2>
+		<p>Modificado por <strong>frontend</strong> usando Git.</p>
+		<button onclick="alert('Servidor funcionando correctamente ')">
+			Probar servidor
+		</button>
+	</div>
+
+</section>
+
+<footer>
+	<p> 2026 - Proyecto Servidor Web</p>
+</footer>
+
+</body>
+</html>
